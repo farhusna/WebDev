@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number Checker</title>
+        <script>
+            function changeInput(){
+                var input = document.getElementById("userInput");
+                var number = parseFloat(input.value);
+
+                if (isNaN(number)){
+                    alert("Please insert a number");
+                }
+                else if(number<10){
+                    alert("Thenumber is lower than 10");
+                }
+                else{
+                    alert("The number is higher than 10");
+                }
+                }
+            
+            </script>
+            </head>
+            <body>
+                <input type="text" id="userInput" placeholder="Enter a number">
+
+                <button onclick="changeInput()">Click</button>
+            </body>
+            </html>

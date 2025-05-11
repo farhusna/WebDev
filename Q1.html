@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change Paragraph with button</title>
+        <script>
+            function changeText(){
+                var myDiv = document.getElementById("myElement");
+                var paragraph = myDiv.querySelector("p");
+                paragraph.textContent = "Hello there!";
+            }
+            </script>
+            </head>
+            <body>
+                <div id="myElement">
+                    <p>Welcom to my website!!</p>
+                </div>
+
+                <button onclick="changeText()">Click Me</button>
+            </body>
+            </html>
